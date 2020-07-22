@@ -4,12 +4,17 @@ import ReactDOM from "react-dom";
 
 // Create a React component
 const App = () => {
-  return (//cuando se tiene un jsx con multiples lineas se debe poner entre parentesis, en caso de que sea de una sola linea, la etiqueta debe estar al mismo nivel del return para que logre identificarlo.
-  <div>
-      <label class="label" for="name">Enter your name:</label>
+  return (
+    //cuando se tiene un jsx con multiples lineas se debe poner entre parentesis, en caso de que sea de una sola linea, la etiqueta debe estar al mismo nivel del return para que logre identificarlo.
+    <div>
+      <label className="label" for="name">
+        Enter your name:
+      </label>
       <input id="name" type="text"></input>
-      <button style="background-color:#000; color:white;">Submit</button>
-  </div>
+      <button style={{ backgroundColor: "#000", color: "white" }}>
+        Submit
+      </button>
+    </div>
   );
 };
 
